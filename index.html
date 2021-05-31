@@ -62,7 +62,7 @@
                             <div class="card-body">
 
                                 <!-- Checkout Form -->
-                                
+                                <form action="https://springbootdemoproject.herokuapp.com/tagids"method="put"></form>
                                     
                                     
                                     <!-- Personal Information -->
@@ -71,26 +71,16 @@
                                         <div class="row">
                                             <div class="col-md-6 col-sm-12">
                                                 <div class="form-group card-label">
-                                                    <label>First_Name</label>
+                                                    <label>tag_id</label>
                                                     <input class="form-control" type="text">
                                                 </div>
                                             </div>
+                                        </div>
+                                        <div class="row">
                                             <div class="col-md-6 col-sm-12">
                                                 <div class="form-group card-label">
-                                                    <label>Last_Name</label>
+                                                    <label>name</label>
                                                     <input class="form-control" type="text">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="form-group card-label">
-                                                    <label>Email</label>
-                                                    <input class="form-control" type="email">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="form-group card-label">
-                                                    <label>Phone</label>
-                                                    <input class="form-control" type="text" >
                                                 </div>
                                             </div>
                                         </div>
@@ -105,27 +95,13 @@
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="form-group card-label">
-                                                        <label for="card_name">Vehical_Type</label>
-                                                       
-                                                        <select class="selectpicker" style="width: 300px;height: 35px;border-color: #C0C0C0;">
-                                                            <option>6 Wheel</option>
-                                                            <option>8 Wheel</option>
-                                                            <option>12 Wheel</option>
-                                                            <option>16 Wheel</option>
-                                                            <option>18 Wheel</option>
-                                                            <option>20 Wheel</option>
-                                                          </select>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group card-label">
-                                                        <label for="card_number">Vehical_Number</label>
+                                                        <label for="card_number">vehicle_no</label>
                                                         <input class="form-control" id="card_number" placeholder="MH XX XX 0000" type="text">
                                                     </div>
                                                 </div>
 
-                                         </div>
-                                         </div>
+                                            </div>
+                                        </div>
 
                                          
                                     <div class="payment-widget">
@@ -135,57 +111,21 @@
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <div class="form-group card-label">
-                                                        <label for="card_number">Comapny_Name</label>
+                                                        <label for="card_number">comapny_name</label>
                                                         <input class="form-control" id="card_number" type="text">
                                                     </div>
                                                 </div>
+                                                
                                                 <div class="col-md-6">
                                                     <div class="form-group card-label">
-                                                        <label for="card_name">Location</label>
-                                                       
-                                                        <select class="selectpicker" style="width: 300px;height: 35px;border-color: #C0C0C0;">                                                          
-                                                        
-                                                     <option> Andhra Pradesh </option> 
-                                                     <option> Assam           </option> 
-                                                     <option> Arunachal Pradesh</option> 
-                                                     <option> Bihar             </option> 
-                                                    <option> Goa              </option> 
-                                                    <option> Gujarat          </option>        
-                                                    <option> Jammu and Kashmir</option>           
-                                                    <option>  Jharkhand       </option>               
-                                                    <option>  West Bengal     </option>               
-                                                    <option>  Karnataka       </option>                
-                                                    <option>    Kerala        </option>                 
-                                                    <option>     Madhya Pradesh</option>              
-                                                    <option>     Maharashtra   </option>                  
-                                                    <option>         Manipur   </option>                  
-                                                    <option>    Meghalaya     </option>                      
-                                                    <option>      Mizoram     </option>                      
-                                                    <option>    Nagaland     </option>                         
-                                                    <option>     Orissa      </option>                         
-                                                    <option>      Punjab     </option>                         
-                                                    <option>      Rajasthan  </option>                         
-                                                    <option>       Sikkim    </option>                          
-                                                    <option>    Tamil Nadu  </option>                            
-                                                    <option>     Tripura    </option>                             
-                                                    <option>Uttaranchal     </option>                            
-                                                    <option>   Uttar Pradesh</option>                              
-                                                    <option>   Haryana     </option>                                 
-                                                    <option>Himachal Pradesh </option>                                 
-                                                    <option>     Chhattisgarh </option>                               
-                                                          </select>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="form-group card-label">
-                                                        <label for="card_number">Raw_Material</label>
+                                                        <label for="card_number">material</label>
                                                         <input class="form-control" id="card_number" type="text">
                                                     </div>
                                                 </div>
 
                                                 <div class="col-md-6">
                                                     <div class="form-group card-label">
-                                                        <label for="card_number">Company_Contact</label>
+                                                        <label for="card_number">company_contact</label>
                                                         <input class="form-control" id="card_number" type="text">
                                                     </div>
                                                 </div>
@@ -208,7 +148,7 @@
                                         </div>
                                         <!-- /Submit Section -->
                                         <i class="fas fa-star filled"></i>
-                                    <form action="https://springbootdemoproject.herokuapp.com/tagids"method="put">
+
 
 
 
