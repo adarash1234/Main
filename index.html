@@ -44,31 +44,7 @@
         }
         
         </style>
-        <script>
-            function postComment() {
-                // Creating the XMLHttpRequest object
-                var request = new XMLHttpRequest();
-                
-                // Instantiating the request object
-                request.open("POST", "ec2-54-158-232-223.compute-1.amazonaws.com");
-                
-                // Defining event listener for readystatechange event
-                request.onreadystatechange = function() {
-                    // Check if the request is compete and was successful
-                    if(this.readyState === 4 && this.status === 200) {
-                        // Inserting the response from server into an HTML element
-                        document.getElementById("result").innerHTML = this.responseText;
-                    }
-                };
-                
-                // Retrieving the form data
-                var myForm = document.getElementById("myForm");
-                var formData = new FormData(myForm);
-            
-                // Sending the request to the server
-                request.send(formData);
-            }
-            </script>
+        
             
 
 </head>
@@ -88,8 +64,32 @@
                             <div class="card-body">
 
                                 <!-- Checkout Form -->
-                                <form action="https://springbootdemoproject.herokuapp.com/tagids"method="put">
-                                    
+                                <form action="https://springbootdemoproject.herokuapp.com/tagids">
+                                    <script>
+                                        function postComment() {
+                                            // Creating the XMLHttpRequest object
+                                            var request = new XMLHttpRequest();
+                                            
+                                            // Instantiating the request object
+                                            request.open("POST", "https://springbootdemoproject.herokuapp.com/tagids");
+                                            
+                                            // Defining event listener for readystatechange event
+                                            request.onreadystatechange = function() {
+                                                // Check if the request is compete and was successful
+                                                if(this.readyState === 4 && this.status === 200) {
+                                                    // Inserting the response from server into an HTML element
+                                                    document.getElementById("result").innerHTML = this.responseText;
+                                                }
+                                            };
+                                            
+                                            // Retrieving the form data
+                                            var myForm = document.getElementById("myForm");
+                                            var formData = new FormData(myForm);
+                                        
+                                            // Sending the request to the server
+                                            request.send(formData);
+                                        }
+                                        </script>  
                                     
                                     <!-- Personal Information -->
                                     <div class="info-widget" style="margin-bottom: 10px;margin-top:-10px;">
